@@ -36,10 +36,33 @@ void mover(char figuras[][8], char colores[][8]) {
 }
 
 int main() {
-    char figuras[8][8];
-    for(int i = 0; i < 8; i++) {
-        for (int j = 0; j < 8; j++) {
-            
-        }
-    }
+    char figuras[8][8] = {
+        {'T', 'C', 'A', 'M', 'R', 'A', 'C', 'T'},
+        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+        {'T', 'C', 'A', 'M', 'R', 'A', 'C', 'T'}
+    };
+
+    char colores[8][8] = {
+        {'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N'},
+        {'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N'},
+        {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+        {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+        {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+        {'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'},
+        {'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B'},
+        {'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B'}
+    };
+
+    // Desplegar el tablero inicial
+    desplegar(figuras, colores);
+
+    // Mover una ficha
+    mover(figuras, colores);
+
+    return 0;
 }
